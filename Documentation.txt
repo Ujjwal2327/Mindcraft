@@ -1,0 +1,27 @@
+npx create-next-app@latest mindcraft
+cd .\mindcraft\
+npx shadcn-ui@latest init
+npm run dev
+npm install next-themes
+npm install convex
+npm install @clerk/clerk-react
+npx convex dev
+npm i usehooks-ts
+
+
+npx shadcn-ui@latest add button
+npx shadcn-ui@latest add dropdown-menu
+npx shadcn-ui@latest add avatar
+
+folder structure
+  folder -      route /folder
+    page.tsx    page shown at /folder
+    route.tsx   backend logic at that page
+
+  _folder       not routable, all inner normal folders also not routable
+
+  (folder)      not routable  all inner normal folders are routable
+                use for grouping inner folders
+    layout.tsx  component applied at all /inner_folders
+      {children}
+
